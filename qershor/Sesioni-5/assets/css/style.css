@@ -1,0 +1,30 @@
+/*Hyrje ne css */
+.f-1-t {
+  color: tomato;
+  background-color: bisque;
+  text-align: center;
+}
+.f-2-t {
+  width: 500px;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 50px;
+}
+
+/*Selektoret*/
+p > span {
+  color: red;
+  text-decoration: underline;
+}
+
+p span {
+  color: red;
+}
+
+p + h3 {
+  color: tomato;
+}
+
+p ~ h3 {
+  color: brown;
+}
