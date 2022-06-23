@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo Klasat (Pseudo Classes)</title>
+  </head>
+  <style>
+    /*qaset vetem elementeve teke*/
+    tr:nth-child(odd) {
+      background-color: red;
+    }
+
+    /*i qaset elementit te pare*/
+    tr:first-child {
+      background-color: aqua;
+    }
+    /*I qaset shkronjes se pare te textit*/
+    p::first-letter {
+      color: red;
+      font-size: 23px;
+    }
+    a {
+      background-color: black;
+      color: white;
+      padding: 10px;
+      margin: 5px;
+    }
+    a:hover {
+      background-color: red;
+    }
+    a:active {
+      background-color: aqua;
+      color: black;
+    }
+    /*a:visited {
+      background-color: darkgray;
+      color: black;
+    }*/
+    /*Para se me fillu paragrafi*/
+    p::before {
+      content: "&";
+    }
+    p::after {
+      content: "...";
+    }
+  </style>
+
+  <body>
+    <!--
+        Pseudo klasat mund te atilizojne dhe permbushin elementet e HTML, mund te jene specifike apo gjenerale
+        sintaksa: selector:pseudo-class{property: value;}
+    -->
+    <table border="1" cellpadding="5">
+      <tr>
+        <td>Lorem</td>
+        <td>Lorem</td>
+        <td>Lorem</td>
+      </tr>
+      <tr>
+        <td>Lorem</td>
+        <td>Lorem</td>
+        <td>Lorem</td>
+      </tr>
+      <tr>
+        <td>Lorem</td>
+        <td>Lorem</td>
+        <td>Lorem</td>
+      </tr>
+      <tr>
+        <td>Lorem</td>
+        <td>Lorem</td>
+        <td>Lorem</td>
+      </tr>
+      <tr>
+        <td>Lorem</td>
+        <td>Lorem</td>
+        <td>Lorem</td>
+      </tr>
+      <tr>
+        <td>Lorem</td>
+        <td>Lorem</td>
+        <td>Lorem</td>
+      </tr>
+      <tr>
+        <td>Lorem</td>
+        <td>Lorem</td>
+        <td>Lorem</td>
+      </tr>
+    </table>
+
+    <br />
+    <a href="#">Download data</a>
+    <a href="https://google.com">For more visit Google</a>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+      dignissimos ullam quos atque cum laborum necessitatibus itaque, dolore
+      recusandae id voluptas dolorum harum aliquid dolorem beatae quia, mollitia
+      praesentium error!
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+      dignissimos ullam quos atque cum laborum necessitatibus itaque, dolore
+      recusandae id voluptas dolorum harum aliquid dolorem beatae quia, mollitia
+      praesentium error!
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+      dignissimos ullam quos atque cum laborum necessitatibus itaque, dolore
+      recusandae id voluptas dolorum harum aliquid dolorem beatae quia, mollitia
+      praesentium error!
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+      dignissimos ullam quos atque cum laborum necessitatibus itaque, dolore
+      recusandae id voluptas dolorum harum aliquid dolorem beatae quia, mollitia
+      praesentium error!
+    </p>
+  </body>
+</html>

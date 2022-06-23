@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dimenzionet e elementeve(vetite width dhe height)</title>
+    <style>
+      .box {
+        width: 300px;
+        background-color: bisque;
+        border: 3px solid black;
+        text-align: center;
+        padding: 10px;
+        min-height: 330px;
+      }
+      h3 {
+        border: 1px dotted brown;
+        display: inline;
+      }
+      p {
+        max-width: 200px;
+        border: 1px double brown;
+        margin: 0 45px;
+        margin-top: 5px;
+      }
+      span {
+        display: inline-block;
+        background-color: lightgray;
+        width: 200px;
+        height: auto; /*by default nese nuk ja cakton e ka auto*/
+        padding: 10px;
+        border-style: inset;
+        border-radius: 5px;
+        border-color: black;
+        /*Top -- Right -- Bottom -- Left*/
+        margin: 20px 0px 0px 20px; /*ose: top-bottom, right-left shkojn bashk */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <h3>Quae sit aperiam saepe</h3>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut quas
+        voluptatum doloremque, enim veritatis nobis omnis exercitationem
+        aspernatur magni beatae. Quae sit aperiam saepe vel dignissimos sed
+        vero, ut velit? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Facere voluptate iusto optio veniam in officia numquam odit ea error
+        nulla fugit voluptatum sint cumque enim, natus commodi consequatur rem.
+        Quas. <a href="#">Read more</a>
+      </p>
+    </div>
+    <br /><br />
+    <span>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis cum sed
+      modi voluptatibus corrupti eius recusandae veritatis quibusdam nisi hic
+      officia, magnam nobis! Autem mollitia aliquam excepturi molestias!
+      Voluptatum, et!
+    </span>
+  </body>
+</html>

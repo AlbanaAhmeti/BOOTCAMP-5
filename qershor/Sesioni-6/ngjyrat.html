@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ngjyrat</title>
+  </head>
+  <body>
+    <!--
+        Ngjyrat mund te definohen ne disa menyra:
+            1. Me emrat e ngjyrave
+            2. Hex (Paraqitje hexadecimale)
+            3. HLS (Hue - Saturation - Lightness)
+            4. HSLA (Hue - Saturation - Lightness - Alpha)
+            5. RGB (Red - Green - Blue)
+            6. RGBA (Red - Green - Blue - Alpha)
+    -->
+    <style>
+      .box {
+        display: inline-block;
+      }
+      ul {
+        list-style: none;
+        border: 3px solid black;
+        width: 300px;
+        background-color: hsla(166, 70%, 50%, 1);
+      }
+      li {
+        border: 1px solid #111;
+        width: 100px;
+        min-height: 100px;
+        margin: 10px;
+        background-color: #11111159;
+        display: inline-block;
+        border-radius: 50px;
+      }
+      .container-3 {
+        position: absolute;
+        top: 10px;
+        right: 0;
+        padding: 10px;
+      }
+    </style>
+  </body>
+  <div class="box">
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+    <ul class="container-3">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2947.725036490285!2d21.154120814930135!3d42.36969884248638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13547f2e7d2c49f3%3A0x295a5b1ccc583724!2sFerizaj!5e0!3m2!1sen!2s!4v1655988633582!5m2!1sen!2s"
+        width="300"
+        height="220"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </ul>
+  </div>
+</html>

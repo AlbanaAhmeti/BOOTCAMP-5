@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selektoret e Atributeve</title>
+    <style>
+      /*1. e shikon a e permban atributin elementi ska rendesi emertimi*/
+      p[id] {
+        color: red;
+        font-size: 20px;
+      }
+      /*2. perveq qe e shikon a e permban elementi i caktuar atributin e kontrollon edhe emertimin*/
+      p[id="second"] {
+        color: orange;
+        font-size: 22px;
+      }
+      .header {
+        font-size: 27px;
+        font-style: italic;
+      }
+      /*3. elementi ne kuader te atributit specifik a e ka nje vlere te caktuar, vlera e ndare me space*/
+      h3[class~="text-center"] {
+        text-align: center;
+        color: chocolate;
+      }
+      /*3.1 elementi, atributi specifik i te cilit a fillon me nje vlere te caktuar, vlera e ndare me ' - '*/
+      h3[class|="title"] {
+        font-style: normal;
+        color: crimson;
+        text-align: center;
+      }
+
+      /*4. atributi i nje elementi, vlera e te cilit fillon me nje string specifik*/
+      p[class^="de"] {
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
+      /*5. atributi i nje elementi i cili permban nje vlere te caktuar(ska rendesi pozicioni)*/
+      p[id*="first"] {
+        text-decoration: underline black 1px;
+      }
+      /*6. atributi i caktuar i nje elementi a permban nje vlere e cila perfundon me ate string?*/
+      p[id$="ond"] {
+        text-decoration: underline dotted black 3px;
+      }
+      /*6.*/
+      a[href$=".pdf"] {
+        color: brown;
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+        Llojet e selektoreve te atributeve:
+            1.[] Mathches a specific attribute(whatever it's value)
+            2.[=] Matches a specific attribute with a specific value
+            3.[~=] Matches a specific attribute whose value appears in a space-separated list of words
+            4. [^=] Matches a specific attribute whose value begins with a specific string 
+            5. [*=] Matches a specific attribute whose value contains a specific substring
+            6. [$=] Matches a specific attribute whose value ends with a specific substring 
+    -->
+    <article class="big">
+      <h3 class="text-center header">Test</h3>
+      <!-- emertimi i nje atributi me dy vlera -->
+      <p class="description text-center" id="second">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel iusto
+        eveniet velit magnam soluta fugit ratione commodi eius ipsam! Tempore
+        excepturi voluptates illo inventore minima officiis quaerat voluptate
+        repellat hic.
+      </p>
+      <a href="book.pdf">Download PDF</a>
+    </article>
+    <article class="small one-third">
+      <h3 class="title a header">Test</h3>
+      <p class="description" id="first">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel iusto
+        eveniet velit magnam soluta fugit ratione commodi eius ipsam! Tempore
+        excepturi voluptates illo inventore minima officiis quaerat voluptate
+        repellat hic.
+      </p>
+      <a href="article-1.html">Read more...</a>
+    </article>
+    <article class="small one-third">
+      <h3 class="title-a header">Test</h3>
+      <p class="description">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel iusto
+        eveniet velit magnam soluta fugit ratione commodi eius ipsam! Tempore
+        excepturi voluptates illo inventore minima officiis quaerat voluptate
+        repellat hic.
+      </p>
+      <a href="article-2.html">Read more...</a>
+    </article>
+    <article class="small one-third">
+      <h3 class="title-a header">Test</h3>
+      <p class="description">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel iusto
+        eveniet velit magnam soluta fugit ratione commodi eius ipsam! Tempore
+        excepturi voluptates illo inventore minima officiis quaerat voluptate
+        repellat hic.
+      </p>
+      <a href="article-3.pdf">Read more...</a>
+    </article>
+  </body>
+</html>
