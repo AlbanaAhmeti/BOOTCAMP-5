@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+/*
+    Download fonts way:
+        @font-face{
+            font-family: ;
+            src: url(.assets/fonts/Karla-VariableFont_wght.ttf );
+        }
+*/
+article {
+  font-family: "Dancing Script", cursive;
+  margin: 20px 350px;
+  max-width: 520px;
+  text-align: center;
+  border: 1px solid black;
+  padding: 40px;
+  border-radius: 5px;
+}
+h1 {
+  font-size: 3em; /*  em eshte njesi matese. 1em = 16px */
+  text-transform: capitalize;
+  letter-spacing: 0.3px; /* hapesira mes shkronjave */
+  text-shadow: 2px 2px 10px palevioletred; /* hija e textit. Atributet: h-shadow, v-shadow, blur-radius, color */
+}
+p::first-letter {
+  text-decoration: underline; /* dekorues eksternal te tekstit */
+}
+p {
+  font-size: 1.5em;
+  margin: 25px 0px;
+  line-height: 33px; /*  gjeresia e nje rreshti */
+  word-spacing: 3px; /* hapesira mes fjaleve */
+  text-indent: 30px; /* shtyhet rreshti i pare per 30px ne te djathte,
+                             nese deshirojm ta shtyejm nga e majta vlera duhet ti jepet me shenjen ' - ' */
+}
+a {
+  font-family: Arial, Helvetica, sans-serif;
+}
+a:hover {
+  font-size: 15px;
+  text-decoration: none;
+  font-weight: 500;
+}

@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+
+.first-list {
+  list-style-type: lower-roman;
+}
+.second-list {
+  list-style-image: url("../img/826904.png");
+  list-style-position: inside;
+  margin: 0px 300px;
+  max-width: 520px;
+}
+.second-list li {
+  background-color: antiquewhite;
+  margin-bottom: 10px;
+  padding: 10px;
+  text-align: center;
+}
+.second-list li:hover {
+  background-color: aquamarine;
+  border: 1px solid brown;
+  border-radius: 3px;
+  font-size: 18px;
+}
+.third-list {
+  list-style: none inside;
+  margin-top: 20px;
+  font-family: "Dancing Script", cursive;
+  font-size: 1.2em;
+  text-shadow: 2px 2px 10px red;
+}
+.third-list li:hover {
+  word-spacing: 5px;
+  letter-spacing: 0.5px;
+  text-decoration: underline antiquewhite;
+}

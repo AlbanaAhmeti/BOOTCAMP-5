@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  height: 100vh;
+  background: rgb(155, 249, 190);
+  background: linear-gradient(
+    0deg,
+    var(--gradiante-start) 1%,
+    var(--gradiante-end) 100%
+  );
+}
+:root {
+  --border-color: rgba(12, 152, 91, 0.8);
+  --gradiante-start: rgba(155, 249, 190, 1);
+  --gradiante-end: rgba(252, 251, 251, 1);
+} /* i ruan vlerat ne variabla */
+
+.container {
+  width: 300px;
+  border: 2px solid #111;
+  border-radius: 10px;
+  padding: 30px;
+  margin: 100px auto;
+  background-color: #fff;
+  box-shadow: -10px 8px 0px -5px var(--border-color);
+}
+label {
+  display: none;
+  line-height: 40px;
+}
+input {
+  border: 0px;
+  border-bottom: 2px solid #222;
+  border-radius: 3px;
+  display: block;
+  padding: 4px;
+  width: 280px;
+  margin-bottom: 30px;
+}
+button {
+  border: 2px solid #222;
+  border-radius: 7px;
+  padding: 5px 20px;
+  background-color: transparent;
+}
+button:hover {
+  transform: scale(1.1);
+}
+h3 {
+  text-align: center;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+}

@@ -1,0 +1,22 @@
+table {
+  border: 2px solid rgb(54, 53, 73);
+  empty-cells: hide; /*me fsheh qelizen e zbrazet */
+  width: 200px;
+  height: 200px;
+  font-size: 30px;
+  text-align: center;
+  border-spacing: 7px;
+  background-color: darkcyan;
+  margin: 20px;
+}
+td {
+  border: 2px solid yellowgreen;
+  background-color: aliceblue;
+}
+.table-2 td:first-child {
+  text-decoration: line-through;
+}
+
+.table-2 {
+  border-collapse: collapse; /* bashkon qelizat */
+}
