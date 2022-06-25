@@ -117,3 +117,9 @@ footer {
 .for-email {
   margin: -70px 0px 30px 950px;
 }
+.for-email button {
+  padding: 5px;
+}
+.for-email input {
+  padding: 5px;
+}
