@@ -1,0 +1,55 @@
+/* Body by defaulf ka margin prej 8 px*/
+body {
+  margin: 0px;
+}
+.box-1 {
+  width: 500px;
+  background-color: aquamarine;
+  padding: 10px;
+  float: left;
+}
+.box-2 {
+  width: 450px;
+  background-color: rgb(233, 246, 88);
+  padding: 10px;
+  float: right;
+}
+.box-3 {
+  width: 950px;
+  background-color: rgb(72, 221, 131);
+  padding: 10px;
+  clear: both;
+}
+/* atributi clear: both; perdoret per te mos lejuar float te ndonje elementi tjeter te nderveproj me elementin ne te cilin po punojm. kemi dhe clear: right; clear: left;*/
+.box-4 {
+  width: 700px;
+  background-color: rgb(226, 175, 82);
+  padding: 10px;
+  float: right;
+}
+hr {
+  height: 5px;
+  background-color: black;
+}
+/*Float Problems*/
+/* nese prindi i ka te gjithe femijet e rrafshuar ne nje ane duhet ti jepet vetia overflow: auto;*/
+.parent {
+  margin: 20px;
+  padding: 5px;
+  border: 1px solid black;
+  overflow: auto;
+}
+p {
+  width: 32.3%;
+  margin: 5px;
+  border: 1px solid grey;
+  background-color: aliceblue;
+  float: left;
+}
+span {
+  clear: both;
+  background-color: antiquewhite;
+  border: 1px solid grey;
+  display: block;
+}
+/*Elementet te cilat vijn pas atyre qe kan atr. float rreshtohen menjeher pas tyre andaj e perdorim atr clear: both; ose nje div pa content me kete atribut.*?

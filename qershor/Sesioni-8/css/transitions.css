@@ -1,0 +1,30 @@
+body {
+  margin: 100px;
+  background-color: thistle;
+}
+
+a {
+  display: inline-block;
+  color: #fff;
+  background-color: tomato;
+  width: 180px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+
+  transition-duration: 0.5s;
+  transition-delay: 0.7s;
+  transition-property: all;
+  transition-timing-function: ease-in-out;
+  /* property duration timing-function */
+  transition: all 0.5s ease-in-out;
+}
+
+a:hover {
+  background-color: #fff;
+  color: tomato;
+  width: 250px;
+  height: 90px;
+  line-height: 80px;
+}

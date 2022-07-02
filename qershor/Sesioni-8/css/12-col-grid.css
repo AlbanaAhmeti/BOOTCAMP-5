@@ -1,0 +1,59 @@
+/* Duke ia dhene keto vlera atributit margin: 0 auto; pozicionohet nje element ne mes*/
+
+:root {
+  --col-width: 80px;
+  --col-margin: 10px;
+}
+.container {
+  width: 960px;
+  margin: 0 auto;
+  border: 1px solid black;
+  overflow: auto;
+}
+/*secili div ka 80px hapsire, 70px width, 10px padding*/
+.container div {
+  float: left;
+  margin: 5px;
+  background-color: salmon;
+}
+.col-1 {
+  width: calc((1 * var(--col-width)) - var(--col-margin));
+}
+.col-2 {
+  width: calc((2 * var(--col-width)) - var(--col-margin));
+}
+.col-3 {
+  width: calc((3 * var(--col-width)) - var(--col-margin));
+}
+.col-4 {
+  width: calc((4 * var(--col-width)) - var(--col-margin));
+}
+.col-5 {
+  width: calc((5 * var(--col-width)) - var(--col-margin));
+}
+.col-6 {
+  width: calc((6 * var(--col-width)) - var(--col-margin));
+}
+.col-7 {
+  width: calc((7 * var(--col-width)) - var(--col-margin));
+}
+.col-8 {
+  width: calc((8 * var(--col-width)) - var(--col-margin));
+}
+.col-9 {
+  width: calc((9 * var(--col-width)) - var(--col-margin));
+}
+.col-10 {
+  width: calc((10 * var(--col-width)) - var(--col-margin));
+}
+.col-11 {
+  width: calc((11 * var(--col-width)) - var(--col-margin));
+}
+.col-12 {
+  width: calc((12 * var(--col-width)) - var(--col-margin));
+}
+
+/*Ushtrimi */
+.ushtrim div {
+  background-color: #fff;
+}

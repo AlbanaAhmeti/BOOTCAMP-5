@@ -1,0 +1,120 @@
+:root {
+  --col-width: 80px;
+  --col-margin: 10px;
+  --bg-color: rgba(43, 193, 192, 255);
+}
+.container {
+  width: 960px;
+  margin: 0 auto;
+  overflow: auto;
+}
+.container div {
+  float: left;
+  margin: 5px;
+}
+.col-1 {
+  width: calc((1 * var(--col-width)) - var(--col-margin));
+}
+.col-2 {
+  width: calc((2 * var(--col-width)) - var(--col-margin));
+}
+.col-3 {
+  width: calc((3 * var(--col-width)) - var(--col-margin));
+}
+.col-4 {
+  width: calc((4 * var(--col-width)) - var(--col-margin));
+}
+.col-5 {
+  width: calc((5 * var(--col-width)) - var(--col-margin));
+}
+.col-6 {
+  width: calc((6 * var(--col-width)) - var(--col-margin));
+}
+.col-7 {
+  width: calc((7 * var(--col-width)) - var(--col-margin));
+}
+.col-8 {
+  width: calc((8 * var(--col-width)) - var(--col-margin));
+}
+.col-9 {
+  width: calc((9 * var(--col-width)) - var(--col-margin));
+}
+.col-10 {
+  width: calc((10 * var(--col-width)) - var(--col-margin));
+}
+.col-11 {
+  width: calc((11 * var(--col-width)) - var(--col-margin));
+}
+.col-12 {
+  width: calc((12 * var(--col-width)) - var(--col-margin));
+}
+/*Header----------------------------------*/
+.logo img {
+  width: 350px;
+}
+/*NavBar--------------------------------*/
+nav ul li {
+  display: inline;
+}
+nav ul {
+  padding: 0px;
+  list-style: none inside;
+  text-align: left;
+}
+nav {
+  background-color: var(--bg-color);
+  padding: 3px;
+  font-weight: 600;
+}
+/*    Socials   */
+.socials ul li img {
+  width: 50px;
+}
+.socials ul li {
+  display: inline;
+}
+/*Photo Gallery -------------------------------*/
+.photo-gallery img {
+  width: 237px;
+}
+.photo-gallery {
+  font-size: 0;
+}
+/*--  Order Form  --------------------------------------*/
+.order-form fieldset {
+  width: 0px;
+  border: none;
+}
+.order-form input {
+  margin-bottom: 20px;
+  padding: 4px;
+}
+.order-form h3 {
+  margin-bottom: 25px;
+}
+.order-form button {
+  padding: 5px 10px;
+  font-weight: bold;
+}
+/* -- info --------------------------------------------*/
+.text-info p {
+  margin-bottom: 20px;
+}
+.text-info ul {
+  margin: 20px 0px 0px 40px;
+}
+.carrotCake-pic img {
+  width: 710px;
+}
+/* Q/A field------------------------------------------ */
+.q-a-tiramisu p {
+  margin-left: 50px;
+}
+/*-- Footer -----------*/
+.subscribeForm {
+  background-color: var(--bg-color);
+}
+.subscribeForm .col-3 {
+  margin: 0px;
+  padding: 30px;
+}

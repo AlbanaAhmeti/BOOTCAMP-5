@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position</title>
+    <style>
+      body {
+        margin: 100px;
+      }
+      .box {
+        width: 200px;
+        height: 200px;
+        display: inline-block;
+      }
+      .red {
+        background-color: red;
+        position: absolute;
+        left: 100px;
+        bottom: 70px;
+      }
+      .green {
+        background-color: green;
+        position: relative;
+        top: 100px;
+        left: 100px;
+      }
+      .blue {
+        background-color: blue;
+        position: static;
+      }
+      .yellow {
+        background-color: yellow;
+        position: fixed;
+      }
+      .purple {
+        background-color: purple;
+        position: sticky;
+        top: 0px;
+      }
+      .test {
+        background-color: brown;
+        width: 300px;
+        position: sticky;
+        bottom: 0px;
+      }
+      .test2{
+        background-color: cadetblue;
+        width: 500px;
+        position: sticky;
+        top: 100px;
+        bottom: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 1. Elementi e ka te para definuar pozicionin statik, duke marre parasysh elementet e tjera.
+        2. Elementi duhet te kete vetine relative qe te mund te punojne atributet top, apo left te cilat e pozicionojne elementin aty
+                ne deshirojm pa marr parasysh raporti me elementet e tjera.
+        3. Vlera absolut iu ipet atributit display per te pozicionuar elementin ne raport me view portin.  
+        4. Vlera fixed iu ipet atributit nese deshirojm ate element ta kemi te fiksuar ne viewport edhe nese bejm scroll down.
+        5. Vlera sticky iu ipet atributit position nese deshirojm qe nje element te caktuar ta pozicionojm lart apo posht dhe te mbes aty gjat scroll.
+    -->
+
+    <div class="box red"></div>
+    <div class="box green"></div>
+    <div class="box blue"></div>
+    <div class="box yellow"></div>
+    <div class="box purple">BANNER</div>
+    <!-- 
+        Display disa elemente bydefault e kan inline disa block.
+            Inline nxe hapsire te nevojshme per permbajtjen e saj, nuk aplikohet as margina as paddingu
+            Block elementet zene komplet nje rresht si hapsire.
+            Per te manipuluar me madhesine dhe pozicionimin e elementit atributit display i jipet vlera inline-block.
+    -->
+    <div class="content" style="width: 30px">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quo
+        ipsa aliquam, est consequatur quas nihil quisquam magnam accusamus quia
+        voluptatem tenetur eos! Qui cupiditate, necessitatibus provident
+        distinctio eaque neque. Lorem ipsum dolor sit, amet consectetur
+        adipisicing elit. Quam, <div class="test2">test test</div> neque cum? Quae cupiditate atque voluptates
+        maxime numquam ut dignissimos! Labore assumenda optio sit ad iste. Ullam
+        reiciendis officiis et optio! Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Temporibus tempora molestiae, optio dolorem quo,
+        veritatis culpa facere consectetur aliquid odio error iste, nemo
+        molestias. Maiores dignissimos quisquam fugiat exercitationem
+        temporibus.
+      </p>
+    </div>
+    <div class="test">alala</div>
+  </body>
+</html>
