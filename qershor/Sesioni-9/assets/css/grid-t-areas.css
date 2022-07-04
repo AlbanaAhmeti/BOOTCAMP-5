@@ -1,0 +1,33 @@
+.wrapper {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "nav nav nav"
+    "main main aside"
+    "footer footer footer";
+}
+header {
+  grid-area: header;
+  height: 80px;
+  background-color: aquamarine;
+}
+nav {
+  grid-area: nav;
+  height: 40px;
+  background-color: yellowgreen;
+}
+main {
+  grid-area: main;
+  height: 340px;
+  background-color: blue;
+}
+aside {
+  grid-area: aside;
+  height: 340px;
+  background-color: palevioletred;
+}
+footer {
+  grid-area: footer;
+  height: 40px;
+  background-color: darkgreen;
+}
