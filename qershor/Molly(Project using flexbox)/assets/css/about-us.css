@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+:root {
+  --col-1: #fff;
+  --col-2: #324651;
+  --col-3: #ffe600;
+  --col-4: #545b6b;
+  --col-5: #e6e6e6;
+  --col-6: #182227;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+/* About us section -------------------------------- */
+.about-us {
+  background-color: var(--col-1);
+  height: 750px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.about-us .about-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-header h1 {
+  font-size: 60px;
+  color: var(--col-2);
+  margin-bottom: 15px;
+}
+.about-header p {
+  color: var(--col-4);
+  width: 80%;
+  text-align: center;
+}
+
+.about-us .about-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.about-content .about-img img {
+  width: 440px;
+}
+.about-content .about-bio {
+  width: 50%;
+  height: 293px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.about-bio h3 {
+  color: var(--col-3);
+}
+.about-bio h4 {
+  color: var(--col-2);
+}
+.about-bio p {
+  color: var(--col-4);
+}
+.about-us .icons {
+  width: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.icons img {
+  width: 30px;
+}
+/* About comapny section -----------------------------*/
+.about-company {
+  background-color: var(--col-2);
+  height: 470px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-company .skills {
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 20px;
+}
+.skills img {
+  width: 600px;
+  margin-bottom: 20px;
+}
+.skills h3 {
+  color: var(--col-3);
+  font-weight: lighter;
+  margin-bottom: 35px;
+}
+.skills h4 {
+  color: var(--col-1);
+  font-weight: lighter;
+  margin-bottom: 7px;
+}
+.about-company .company-content {
+  width: 40%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.company-content h3 {
+  color: var(--col-3);
+  font-weight: lighter;
+}
+.company-content p {
+  color: var(--col-1);
+  width: 90%;
+}

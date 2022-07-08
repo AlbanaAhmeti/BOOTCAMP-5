@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
 :root {
@@ -12,69 +13,59 @@
   --col-6: #182227;
 }
 .container {
-  display: flex;
-  flex-direction: column;
-}
-/*   Navbar    */
-nav {
-  height: 100px;
-  background-color: var(--col-1);
-  align-self: center;
-}
-nav ul {
-  width: 830px;
-  height: 100px;
-  list-style-type: none;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-li a {
-  text-decoration: none;
-  color: var(--col-2);
-}
-li a:hover {
-  color: var(--col-3);
-  cursor: pointer;
-}
-/* Main  */
-main {
-  height: 700px;
+  height: 800px;
   background-color: var(--col-2);
-}
-.intro {
-  width: 800px;
-  height: 400px;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
-  color: var(--col-1);
-}
-.int-02 {
-  height: 100px;
-}
-span {
-  color: var(--col-3);
-}
-h1 {
-  font-size: 90px;
-}
-.int-01 {
-  font-size: 13px;
   text-align: center;
+  color: var(--col-1);
+  justify-content: space-evenly;
 }
-button {
-  padding: 8px 15px;
+.container .header {
+  width: 50%;
+}
+.header h1 {
+  font-size: 50px;
+  font-weight: lighter;
+  margin-bottom: 20px;
+}
+.header p {
+  font-size: 14px;
+}
+.container .form form {
+  width: 1000px;
+  height: 500px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+.form form input {
+  width: 300px;
+  height: 40px;
+  background-color: var(--col-2);
+  color: var(--col-1);
+  border: 1px solid white;
+  border-radius: 8px;
+  margin-right: 20px;
+  padding: 10px 15px;
+}
+.form form textarea {
+  background-color: var(--col-2);
+  color: var(--col-1);
+  padding-top: 15px;
+}
+.form form button {
+  color: var(--col-2);
+  background-color: var(--col-1);
+  padding: 10px 20px;
   border-radius: 15px;
-  border: 1px solid var(--col-4);
-  color: var(--col-3);
-  font-weight: bolder;
+  border: none;
 }
-button:hover {
-  background-color: var(--col-3);
-  color: var(--col-6);
+.form button:hover {
+  background-color: var(--col-6);
+  color: var(--col-1);
   cursor: pointer;
 }
 /* Footer */

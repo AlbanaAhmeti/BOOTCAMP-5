@@ -106,12 +106,15 @@ ul li a:hover {
 }
 .text-container h3 {
   color: var(--col-2);
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 .text-container .italic-txt {
   margin-bottom: 30px;
   font-size: 15px;
   color: #324651;
+}
+.text-container p {
+  color: var(--col-1);
 }
 .text-container button {
   margin-top: 20px;
