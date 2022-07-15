@@ -1,0 +1,30 @@
+@media screen and (max-width: 400px) {
+  h1 {
+    color: red;
+  }
+}
+
+@media only print {
+  h1 {
+    font-size: 220px;
+  }
+}
+/*
+  portreti: kur gjeresia eshte me e vogel se lartesia
+  landscape: kur gjeresia me e madhe se lartesia
+*/
+@media (orientation: portrait) {
+  h1 {
+    color: blue;
+    font-size: 120px;
+  }
+}
+/* 'and' duhet te plotesohen te dy kushtet 
+    'or (,)' duhet te plotesohet njeri kusht
+*/
+@media (orientation: landscape) and (min-width: 700px) {
+  h1 {
+    color: peru;
+    font-size: 150px;
+  }
+}
